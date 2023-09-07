@@ -3,11 +3,15 @@ import { useState } from "react";
 function Home() {
   const [cart, setCart] = useState([
     {
-      product: "price_1NiZR4BDXB1OugmSJI4HeoAF",
+      product: "price_1NmtgnLnIY6rREyZHyhv2T2D",
       quantity: 2,
     },
     {
-      product: "price_1NiZKXBDXB1OugmSq7ADqnnE",
+      product: "price_1NmtffLnIY6rREyZQWazNRCy",
+      quantity: 1,
+    },
+    {
+      product: "price_1NmteSLnIY6rREyZaK1EsgQw",
       quantity: 1,
     },
   ]);
@@ -34,7 +38,7 @@ function Home() {
 
   return (
     <div>
-      <button onClick={handlePayment}>GE MIG PENGAR</button>
+      <button onClick={handlePayment}>Checkout</button>
     </div>
   );
 }
