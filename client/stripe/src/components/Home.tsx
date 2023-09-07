@@ -15,6 +15,7 @@ function Home() {
       quantity: 1,
     },
   ]);
+  
 
   async function handlePayment() {
     const response = await fetch(
