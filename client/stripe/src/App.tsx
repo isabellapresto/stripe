@@ -1,19 +1,15 @@
-import React from 'react';
-import Register from './components/Register';
-import Login from './components/Login';
-import ProductList from './components/ProductList';
-import ProductItem from './components/ProductItem';
-import Cart from './components/Cart';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Confirmation from "./components/Confirmation";
 
 function App() {
   return (
-    <div className="App">
-      <h2>Stripe Webbshop <Cart /></h2>
-      <Login />
-      <Register />
-      <ProductList />
-      <ProductItem />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='confirmation' element={<Confirmation />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
